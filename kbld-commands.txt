@@ -1,0 +1,2 @@
+kbld -f images.kbld --lock-output images.lock
+kbld relocate -f images.lock --lock-output images-relocated.lock --repository applecider.azurecr.io/nginx
