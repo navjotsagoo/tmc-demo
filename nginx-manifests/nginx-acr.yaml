@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-azure-registry
+  name: nginx-azure-registry
+  namespace: tmc-registry-policy
+spec:
+  imagePullSecrets:
+  - name: acr-registry
+  containers:
+  - image: applecider.azurecr.io/nginx@sha256:b4f3c8f240d4cb48d7fcda0e9f0b58fa5a2c5acf95c38f2ced559e683b51684c
+    imagePullPolicy: Always
+    name: nginx

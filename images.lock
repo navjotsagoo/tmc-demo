@@ -1,0 +1,7 @@
+apiVersion: kbld.k14s.io/v1alpha1
+kind: Config
+minimumRequiredVersion: 0.24.0
+overrides:
+- image: nginx
+  newImage: index.docker.io/library/nginx@sha256:b4f3c8f240d4cb48d7fcda0e9f0b58fa5a2c5acf95c38f2ced559e683b51684c
+  preresolved: true

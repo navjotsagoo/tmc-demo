@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  labels:
+    run: nginx-dockerhub
+  name: nginx-dockerhub
+  namespace: tmc-registry-policy
+spec:
+  containers:
+  - image: nginx
+    imagePullPolicy: Always
+    name: nginx
